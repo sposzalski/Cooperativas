@@ -14,7 +14,8 @@ namespace Quilmes.Cooperativas.Portal
             BundleTable.EnableOptimizations = true;
             #endif
 
-                                             
+            #region Client
+
             bundles.Add(new StyleBundle("~/Content/css/clientStyles")
               .Include("~/assets/plugins/bootstrap/css/bootstrap.min.css")
               .Include("~/assets/css/style.css")
@@ -52,6 +53,33 @@ namespace Quilmes.Cooperativas.Portal
                 .Include("~/assets/js/plugins/revolution-slider.js")
                 .Include("~/assets/js/plugins/style-switcher.js")                
                 );
+
+            #endregion
+
+            #region Admin
+
+            bundles.Add(new StyleBundle("~/Content/css/adminStyles")
+              .Include("~/assets/admin/css/bootstrap.css")
+              .Include("~/assets/admin/css/animate.css")
+              .Include("~/assets/admin/css/font-awesome.min.css")
+              .Include("~/assets/admin/css/font.css")
+              .Include("~/assets/admin/css/fuelux.css")
+              .Include("~/assets/admin/css/app.css")
+              );
+
+            bundles.Add(new ScriptBundle("~/bundles/scripts/basicAdminScripts")
+                .Include("~/assets/admin/js/jquery.min.js")
+                .Include("~/assets/admin/js/bootstrap.js")
+                .Include("~/assets/admin/js/app.js")
+                .Include("~/assets/admin/js/slimscroll/jquery.slimscroll.min.js")
+                .Include("~/assets/admin/js/libs/underscore-min.js")
+                .Include("~/assets/admin/js/fuelux/fuelux.js")
+                .Include("~/assets/admin/js/fuelux/demo.datagrid.js")
+                .Include("~/assets/admin/js/app.plugin.js")
+              
+                );
+
+            #endregion
 
         }
     }

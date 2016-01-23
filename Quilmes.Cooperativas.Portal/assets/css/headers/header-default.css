@@ -182,7 +182,8 @@ body.header-fixed-space-default {
 .header .topbar h2 {
     display: inline-block;
     text-align: center;
-    position: relative;  
+    position: relative;
+    left: 114px;  
 }
 
 /*Big Logo Style*/

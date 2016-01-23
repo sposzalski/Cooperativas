@@ -20,10 +20,18 @@ namespace Quilmes.Cooperativas.Portal.Controllers
             return View();
         }
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
+        public ActionResult Contacto()
+        {           
+            return View();
+        }
 
+        public ActionResult Noticias()
+        {
+            return View();
+        }
+
+        public ActionResult Login()
+        {
             return View();
         }
     }
